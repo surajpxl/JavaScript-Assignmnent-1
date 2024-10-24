@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Booking Application</title>
+</head>
+<body>
+  <script>
+    // Ticket prices
+    const priceChild = 100;   // Ticket price for a child
+    const priceAdult = 150;   // Ticket price for an adult
+    const priceSenior = 120;   // Ticket price for a senior
+
+    // Number of viewers
+    let numberOfChild = 2;
+    let numberOfAdult = 1;
+    let numberOfSenior = 1;
+
+    // Calculate total price
+    let totalPrice = (numberOfChild * priceChild) + (numberOfAdult * priceAdult) + (numberOfSenior * priceSenior);
+
+    // Print the total price to be paid
+    console.log("The total ticket price is: " + totalPrice);
+  </script>
+</body>
+</html>

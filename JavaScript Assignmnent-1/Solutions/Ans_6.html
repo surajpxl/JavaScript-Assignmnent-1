@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation System</title>
+</head>
+<body>
+  <script>
+    let name = "mithun";
+    let email = "mithun.s@pw.live"; 
+    let age = "21";
+
+    
+    function validateUserInfo(name, email, age) {
+      
+      if (typeof name !== "string") {
+        console.log("Name should be a string.");
+      } else {
+        console.log("Name is valid.");
+      }
+
+      
+      if (typeof email !== "string") {
+        console.log("Email should be a string.");
+      } else {
+        console.log("Email is valid.");
+      }
+
+  
+      if (typeof age !== "number") {
+        console.log("Age is valid.");
+      } else {
+        console.log("Age Should Be A Number..");
+      }
+    }
+
+    let ageAsNumber = Number(age); 
+
+   
+    validateUserInfo(name, email, ageAsNumber);
+  </script>
+</body>
+</html>
